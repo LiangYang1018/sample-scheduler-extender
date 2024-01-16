@@ -18,6 +18,6 @@ func main() {
 	router.GET("/", Index)
 	router.POST("/filter", Filter)
 	router.POST("/prioritize", Prioritize)
-
+	log.Println("sample-scheduler-extender starts !!!")
 	log.Fatal(http.ListenAndServe(":8888", router))
 }
